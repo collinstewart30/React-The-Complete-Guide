@@ -64,3 +64,20 @@ class User {
 const userClass = new User("Me", 32);
 console.log(userClass);
 console.log(userClass.greet4());
+
+/* Section 2-23 */
+const hobbies = ['Sports', 'Cooking', 'Reading'];
+console.log(hobbies[0]);
+
+hobbies.push('Working');
+console.log(hobbies);
+
+const index = hobbies.findIndex((item) => {
+    return item === 'Reading';
+});
+console.log(index);
+
+const mapHobbies = hobbies.map((item) => {
+    return item + '?';
+});
+console.log(mapHobbies);
