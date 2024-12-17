@@ -81,3 +81,21 @@ const mapHobbies = hobbies.map((item) => {
     return item + '?';
 });
 console.log(mapHobbies);
+
+/* Section 2-24 */
+const userNameData = ['Collin', 'Stewart'];
+
+const firstName = userNameData[0];
+const lastName = userNameData[1];
+
+//Deconstruct array
+const [firstName1, lastName1] = ['Collin', 'Stewart'];
+console.log(firstName1);
+console.log(lastName1);
+
+//Deconstruct object - have to use same name in the object as the variable
+const {name, age} = {
+    name: "Collin",
+    age: 30
+};
+console.log(name);
