@@ -99,3 +99,17 @@ const {name, age} = {
     age: 30
 };
 console.log(name);
+
+/* Section 2-26 */
+const hobbies2 = ['Sports', 'Cooking', 'Reading'];
+const newHobbies2 = ['Swimming'];
+
+const mergedHobbies = [...hobbies2, ...newHobbies2];
+console.log(mergedHobbies);
+
+/* Section 2-29 */
+const handleTimeout = () => {
+    console.log('Timed Out!');
+};
+
+setTimeout(handleTimeout, 2000);
