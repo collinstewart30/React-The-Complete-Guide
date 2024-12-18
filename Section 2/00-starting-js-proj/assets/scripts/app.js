@@ -113,3 +113,14 @@ const handleTimeout = () => {
 };
 
 setTimeout(handleTimeout, 2000);
+
+/* Section 2-30 */
+function init() {
+    function greet() {
+        console.log('Hi');
+    }
+    //works
+    greet();
+}
+//doesnt work outside init function
+//greet();
