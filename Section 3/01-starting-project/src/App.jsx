@@ -20,15 +20,16 @@ function App() {
         <section id='core-concepts'>
           <h2>Core Concepts</h2>
           <ul>
+            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept key={conceptItem.title} {...conceptItem} />)}
+            {/* Code Above outputs the data by mapping it rather than doing it individually
             <CoreConcept
               title={CORE_CONCEPTS[0].title}
               description={CORE_CONCEPTS[0].description}
               image={CORE_CONCEPTS[0].image}
             />
-            {/*The three below are shortened versions of the first one.*/}
             <CoreConcept {...CORE_CONCEPTS[1]} />
             <CoreConcept {...CORE_CONCEPTS[2]} />
-            <CoreConcept {...CORE_CONCEPTS[3]} />
+            <CoreConcept {...CORE_CONCEPTS[3]} /> */}
           </ul>
         </section>
         <section id='examples'>
